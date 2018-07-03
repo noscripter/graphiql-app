@@ -11,7 +11,9 @@
     "start-dev": "NODE_ENV=development electron .",
     "start-hot": "HOT=1 NODE_ENV=development electron .",
     "package": "node package.js --name=GraphiQL",
-    "package-all": "node package.js --name=GraphiQL --all"
+    "package-all": "node package.js --name=GraphiQL --all",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "author": "Adam Miskiewicz <adam.skevy@mac.com> (http://github.com/skevy)",
   "license": "MIT",
@@ -23,12 +25,13 @@
     "graphiql": "skevy/graphiql#redbox",
     "graphql": "^0.4.7",
     "isomorphic-fetch": "^2.1.1",
-    "lodash": "^3.10.1",
+    "lodash": "^4.17.5",
     "mousetrap": "^1.5.3",
     "object-assign": "^4.0.1",
-    "radium": "^0.14.1",
+    "radium": "^0.16.0",
     "react": "^0.13.3",
-    "react-modal": "^0.5.0"
+    "react-modal": "^0.5.0",
+    "snyk": "^1.88.0"
   },
   "devDependencies": {
     "asar": "^0.8.0",
@@ -55,5 +58,6 @@
     "webpack": "^1.12.2",
     "webpack-dev-server": "^1.12.0",
     "webpack-target-electron-renderer": "^0.1.0"
-  }
+  },
+  "snyk": true
 }
