@@ -23,10 +23,10 @@
     "graphiql": "skevy/graphiql#redbox",
     "graphql": "^0.4.7",
     "isomorphic-fetch": "^2.1.1",
-    "lodash": "^3.10.1",
+    "lodash": "^4.17.11",
     "mousetrap": "^1.5.3",
     "object-assign": "^4.0.1",
-    "radium": "^0.14.1",
+    "radium": "^0.16.0",
     "react": "^0.13.3",
     "react-modal": "^0.5.0"
   },
